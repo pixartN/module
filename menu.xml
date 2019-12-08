@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Training_Brands:etc/menu.xsd">
+	<menu>
+	  <add id="Training_Brands::rsgitech" title="News" translate="title" module="Training_Brands" sortOrder="90" dependsOnModule="Training_Brands" resource="Training_Brands::rsgitech"/>
+	  <add id="Training_Brands::news" title="Add" translate="title" module="Training_Brands" parent="Training_Brands::rsgitech" sortOrder="50" dependsOnModule="Training_Brands" resource="Training_Brands::news"/>
+	  <add id="Training::news_allnews" title="Add News" translate="title" module="Training_Brands" parent="Training_Brands::news" sortOrder="10" dependsOnModule="Training_Brands" action="news/allnews" resource="Training_Brands::news_allnews"/>
+	</menu>
+</config>
